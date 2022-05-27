@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 import { Box } from '@strapi/design-system/Box';
 import { Button } from '@strapi/design-system/Button';
@@ -7,12 +7,12 @@ import { Loader } from '@strapi/design-system/Loader';
 import { Main } from '@strapi/design-system/Main';
 import { Typography } from '@strapi/design-system/Typography';
 import Upload from '@strapi/icons/Upload';
-import { LoadingIndicatorPage, request } from "@strapi/helper-plugin";
+import { LoadingIndicatorPage, request } from '@strapi/helper-plugin';
 
 import { useIntl } from 'react-intl';
 import { getTrad } from '../../utils';
 
-import pluginId from "../../pluginId";
+import pluginId from '../../pluginId';
 
 const POLL_INTERVAL = 10000;
 
@@ -25,7 +25,7 @@ const HomePage = () => {
   useEffect(() => {
     let timeout;
     const checkBusy = async () => {
-      const { busy } = await request(`/${pluginId}/check`, { method: "GET" });
+      const { busy } = await request(`/${pluginId}/check`, { method: 'GET' });
 
       setBusy(busy);
       setReady(true);
@@ -43,7 +43,7 @@ const HomePage = () => {
   const triggerPublish = async () => {
     setBusy(true);
 
-    await request(`/${pluginId}/publish`, { method: "GET" });
+    await request(`/${pluginId}/publish`, { method: 'GET' });
   };
 
   const handleClick = () => {
@@ -88,7 +88,8 @@ const HomePage = () => {
               <Typography variant="omega">
                 {formatMessage({
                   id: getTrad('home.prompt'),
-                  defaultMessage: 'Clicking the below button will trigger the site to rebuild with new content, are you sure?',
+                  defaultMessage:
+                    'Clicking the below button will trigger the site to rebuild with new content, are you sure?',
                 })}
               </Typography>
             </Box>
