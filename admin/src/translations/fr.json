@@ -1,1 +1,10 @@
-{}
+{
+  "plugin.name": "Publier le site",
+  "home.title": "Publier le site",
+  "home.description": "Publication des changements sur votre site",
+  "home.notready": "Vérification du status...",
+  "home.prompt": "Cliquez sur le bouton ci-dessous pour republier votre site avec les derniers changements.",
+  "home.prompt.confirm": "Êtes-vous sûr de vouloir lancer la publication ?",
+  "home.busy": "Le site est en cours de publication, veuillez patienter.",
+  "home.button.publish": "Publier"
+}

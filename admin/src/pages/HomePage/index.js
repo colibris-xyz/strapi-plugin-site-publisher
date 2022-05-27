@@ -64,11 +64,11 @@ const HomePage = () => {
       <HeaderLayout
         title={formatMessage({
           id: getTrad('home.title'),
-          defaultMessage: 'Publishing',
+          defaultMessage: 'Publish site',
         })}
         subtitle={formatMessage({
           id: getTrad('home.description'),
-          defaultMessage: 'Publish changes to GitHub',
+          defaultMessage: 'Publishing changes to your site',
         })}
       />
       <ContentLayout>
@@ -89,7 +89,7 @@ const HomePage = () => {
                 {formatMessage({
                   id: getTrad('home.prompt'),
                   defaultMessage:
-                    'Clicking the below button will trigger the site to rebuild with new content, are you sure?',
+                    'Clicking the below button will trigger your site to rebuild with new content, are you sure?',
                 })}
               </Typography>
             </Box>
