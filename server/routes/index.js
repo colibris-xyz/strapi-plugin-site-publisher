@@ -6,15 +6,15 @@ module.exports = [
     path: '/check',
     handler: 'publish.check',
     config: {
-      policies: []
-    }
+      policies: [],
+    },
   },
   {
     method: 'GET',
     path: '/publish',
     handler: 'publish.publish',
     config: {
-      policies: []
-    }
-  }
+      policies: [],
+    },
+  },
 ];

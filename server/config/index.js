@@ -25,5 +25,5 @@ module.exports = {
     if (!config.branch) {
       throw new Error('branch is required');
     }
-  }
+  },
 };

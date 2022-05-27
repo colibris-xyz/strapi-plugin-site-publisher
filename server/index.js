@@ -7,5 +7,5 @@ const config = require('./config');
 module.exports = {
   routes,
   controllers,
-  config
+  config,
 };

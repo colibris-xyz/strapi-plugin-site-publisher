@@ -1,7 +1,7 @@
 import { prefixPluginTranslations } from '@strapi/helper-plugin';
-import pluginPkg from "../../package.json";
-import pluginId from "./pluginId";
-import Initializer from "./components/Initializer";
+import pluginPkg from '../../package.json';
+import pluginId from './pluginId';
+import Initializer from './components/Initializer';
 import PluginIcon from './components/PluginIcon';
 
 const { name, displayName } = pluginPkg.strapi;
@@ -16,7 +16,7 @@ export default {
         defaultMessage: displayName,
       },
       Component: async () => {
-        const component = await import(/* webpackChunkName: "github-publish" */ './pages/HomePage');
+        const component = await import(/* webpackChunkName: "publish-site" */ './pages/HomePage');
 
         return component;
       },
@@ -26,28 +26,28 @@ export default {
       name,
       initializer: Initializer,
       isReady: false,
-    })
+    });
   },
 
   async registerTrads({ locales }) {
-   const importedTrads = await Promise.all(
-     locales.map(locale => {
-       return import(`./translations/${locale}.json`)
-         .then(({ default: data }) => {
-           return {
-             data: prefixPluginTranslations(data, pluginId),
-             locale,
-           };
-         })
-         .catch(() => {
-           return {
-             data: {},
-             locale,
-           };
-         });
-     })
-   );
+    const importedTrads = await Promise.all(
+      locales.map((locale) => {
+        return import(`./translations/${locale}.json`)
+          .then(({ default: data }) => {
+            return {
+              data: prefixPluginTranslations(data, pluginId),
+              locale,
+            };
+          })
+          .catch(() => {
+            return {
+              data: {},
+              locale,
+            };
+          });
+      })
+    );
 
-   return Promise.resolve(importedTrads);
- },
+    return Promise.resolve(importedTrads);
+  },
 };
