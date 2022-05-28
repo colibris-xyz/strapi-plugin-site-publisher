@@ -17,13 +17,8 @@ module.exports = ({ strapi }) => {
 
       const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow_id}/runs?branch=${branch}`;
 
-      const { data: inProgressData } = await axios.get(`${url}&status=in_progress`, {
-        headers,
-      });
-
-      const { data: queuedData } = await axios.get(`${url}&status=queued`, {
-        headers,
-      });
+      const { data: inProgressData } = await axios.get(`${url}&status=in_progress`, { headers });
+      const { data: queuedData } = await axios.get(`${url}&status=queued`, { headers });
 
       const busy = !!(inProgressData.total_count + queuedData.total_count);
 
@@ -43,6 +38,11 @@ module.exports = ({ strapi }) => {
       const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow_id}/dispatches`;
       const { status } = await axios.post(url, data, { headers });
       const success = status === 204;
+
+      // Wait a few seconds because Github does not return the new job instantly
+      if (success) {
+        await new Promise((resolve) => setTimeout(resolve, 5000));
+      }
 
       ctx.body = { success };
     },
