@@ -12,4 +12,7 @@ module.exports = {
       ...require('./.eslintrc.front.js'),
     },
   ],
+  rules: {
+    'func-style': [2, 'expression'],
+  }
 };

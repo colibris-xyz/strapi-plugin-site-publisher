@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useCallback, useEffect, useState, useRef } from 'react';
 
 import { Box } from '@strapi/design-system/Box';
 import { Button } from '@strapi/design-system/Button';
@@ -21,29 +21,31 @@ const HomePage = () => {
 
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
+  const timeoutRef = useRef();
 
-  useEffect(() => {
-    let timeout;
-    const checkBusy = async () => {
-      const { busy } = await request(`/${pluginId}/check`, { method: 'GET' });
+  const checkBusy = useCallback(async () => {
+    const { busy } = await request(`/${pluginId}/check`, { method: 'GET' });
+    setBusy(busy);
 
-      setBusy(busy);
-      setReady(true);
-
-      timeout = setTimeout(checkBusy, POLL_INTERVAL);
-    };
-
-    checkBusy();
-
-    return () => {
-      clearTimeout(timeout);
-    };
+    timeoutRef.current = setTimeout(checkBusy, POLL_INTERVAL);
   }, []);
 
+  useEffect(() => {
+    checkBusy();
+    setReady(true);
+
+    return () => {
+      clearTimeout(timeoutRef.current);
+    };
+  }, [checkBusy]);
+
   const triggerPublish = async () => {
+    clearTimeout(timeoutRef.current);
     setBusy(true);
 
     await request(`/${pluginId}/publish`, { method: 'GET' });
+
+    checkBusy();
   };
 
   const handleClick = () => {
