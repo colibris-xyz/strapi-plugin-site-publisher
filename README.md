@@ -1,4 +1,4 @@
-# Strapi v4 - Trigger site build plugin
+# Strapi v4 - Site Publisher Plugin
 
 This is a plugin for [Strapi](https://github.com/strapi/strapi) headless CMS. It lets you trigger a GitHub Action workflow when the site is ready to be published.
 
@@ -10,11 +10,11 @@ This is a plugin for [Strapi](https://github.com/strapi/strapi) headless CMS. It
 
 ![Screenshot](./docs/screenshot.png 'Plugin Screenshot')
 
-When using Strapi as a headless CMS for a statically built website you need a way to trigger the site to rebuild when content has been updated. The typical approach is to setup a Strapi managed webhook to trigger a CI/CD pipeline whenever content changes. This approach has it's issues. For example when making many changes to content, builds are triggered multiple times and deployments can fail due to the site being deployed concurrently.
+When using Strapi as a headless CMS for a statically built website, you need a way to trigger the site to rebuild when content has been updated. The typical approach is to setup a Strapi managed webhook to trigger a CI/CD pipeline whenever content changes. This approach has it's issues. For example when making many changes to content, builds are triggered multiple times and deployments can fail due to the site being deployed concurrently.
 
 This plugin tackles the publishing flow a different way. The site administrators can take their time and make many changes and once the content update is complete they can trigger a single build.
 
-This plugin also checks to see if an `in_progress` build is active or if anything is in the `queue` and not allow the user to trigger another. Also, when a build has been triggered the user can wait on the plugin page to see when the build and deployment has completed.
+This plugin also checks to see if a build is already in progress and not allow the user to trigger another. Also, when a build has been triggered the user can wait on the plugin page to see when the build and deployment has completed.
 
 ## Installation
 
@@ -53,7 +53,7 @@ GITHUB_TOKEN=XXXXXXX
 
 ## Use the Plugin
 
-When the plugin has been installed correctly just click on `GitHub Publishing` in the sidebar under plugins then click "Publish".
+When the plugin has been installed correctly just click on "Publish Site" in the sidebar under plugins then click "Publish".
 
 ## Credits
 
