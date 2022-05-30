@@ -21,7 +21,7 @@ This plugin also checks to see if an `in_progress` build is active or if anythin
 Install this plugin with yarn:
 
 ```bash
-yarn add strapi-plugin-publish-site
+yarn add strapi-plugin-site-publisher
 ```
 
 ## Configuration
@@ -30,7 +30,7 @@ Generate a config file at `config/plugins.js` or `config/development/plugins.js`
 
 ```javascript
 module.exports = ({ env }) => ({
-  'trigger-site-build': {
+  'site-publisher': {
     owner: 'username', // The Github organisation or user
     repo: 'reponame', // The name of the repository
     workflow_id: 'rebuild.yml', // The workflow_id or filename
@@ -59,9 +59,9 @@ When the plugin has been installed correctly just click on `GitHub Publishing` i
 
 This plugin is a fork of [strapi-plugin-github-publish](https://github.com/phantomstudios/strapi-plugin-github-publish) by [Phantom Studios](https://github.com/phantomstudios), many thanks to them for their work.
 
-[npm-image]: https://img.shields.io/npm/v/strapi-plugin-publish-site.svg?style=flat-square&logo=react
-[npm-url]: https://npmjs.org/package/strapi-plugin-publish-site
-[npm-downloads-image]: https://img.shields.io/npm/dm/strapi-plugin-publish-site.svg
-[npm-downloads-url]: https://npmcharts.com/compare/strapi-plugin-publish-site?minimal=true
-[ci-image]: https://github.com/colibris-xyz/strapi-plugin-publish-site/workflows/Test/badge.svg
-[ci-url]: https://github.com/colibris-xyz/strapi-plugin-publish-site/actions
+[npm-image]: https://img.shields.io/npm/v/strapi-plugin-site-publisher.svg?style=flat-square&logo=react
+[npm-url]: https://npmjs.org/package/strapi-plugin-site-publisher
+[npm-downloads-image]: https://img.shields.io/npm/dm/strapi-plugin-site-publisher.svg
+[npm-downloads-url]: https://npmcharts.com/compare/strapi-plugin-site-publisher?minimal=true
+[ci-image]: https://github.com/colibris-xyz/strapi-plugin-site-publisher/workflows/Test/badge.svg
+[ci-url]: https://github.com/colibris-xyz/strapi-plugin-site-publisher/actions
