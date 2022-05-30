@@ -1,16 +1,16 @@
 {
-  "name": "strapi-plugin-publish-site",
+  "name": "strapi-plugin-site-publisher",
   "version": "0.0.1",
   "description": "A plugin to easily publish your site from Strapi.",
   "strapi": {
     "displayName": "Publish site",
-    "name": "publish-site",
+    "name": "site-publisher",
     "description": "Publish your site by triggering a Github workflow.",
     "kind": "plugin"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colibris-xyz/strapi-plugin-publish-site"
+    "url": "https://github.com/colibris-xyz/strapi-plugin-site-publisher"
   },
   "license": "MIT",
   "author": {
