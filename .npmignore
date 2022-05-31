@@ -2,6 +2,6 @@
 .eslintrc.*
 .prettierrc.js
 .release-it.json
-docs/
+screenshots/
 renovate.json
 *.log
