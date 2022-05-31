@@ -1,0 +1,7 @@
+.github/
+.eslintrc.*
+.prettierrc.js
+.release-it.json
+docs/
+renovate.json
+*.log
