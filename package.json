@@ -26,7 +26,8 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "release": "release-it"
   },
   "dependencies": {
     "axios": "0.27.2"
@@ -35,6 +36,7 @@
     "@babel/core": "7.18.5",
     "@babel/eslint-parser": "7.18.2",
     "@babel/preset-react": "7.17.12",
+    "@release-it/conventional-changelog": "5.0.0",
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
@@ -44,7 +46,8 @@
     "eslint-plugin-react": "7.30.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "npm-run-all": "4.1.5",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "release-it": "15.0.0"
   },
   "engines": {
     "node": ">=10.16.0 <=16.x.x",
