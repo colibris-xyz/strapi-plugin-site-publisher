@@ -31,8 +31,7 @@ const HomePage = () => {
   }, []);
 
   useEffect(() => {
-    checkBusy();
-    setReady(true);
+    checkBusy().then(() => setReady(true));
 
     return () => {
       clearTimeout(timeoutRef.current);
