@@ -33,9 +33,9 @@
     "axios": "0.27.2"
   },
   "devDependencies": {
-    "@babel/core": "7.18.5",
+    "@babel/core": "7.18.6",
     "@babel/eslint-parser": "7.18.2",
-    "@babel/preset-react": "7.17.12",
+    "@babel/preset-react": "7.18.6",
     "@release-it/conventional-changelog": "5.0.0",
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
