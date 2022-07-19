@@ -55,6 +55,12 @@ GITHUB_TOKEN=XXXXXXX
 
 When the plugin has been installed correctly just click on "Publish Site" in the sidebar under plugins then click "Publish".
 
+## Roadmap
+
+- [ ] Error handling
+- [ ] Support other deployment platforms (Gitlab CI, Bitbucket, Netlify, etc)
+- [ ] Configure the plugin from admin panel
+
 ## Credits
 
 This plugin is a fork of [strapi-plugin-github-publish](https://github.com/phantomstudios/strapi-plugin-github-publish) by [Phantom Studios](https://github.com/phantomstudios), many thanks to them for their work.
