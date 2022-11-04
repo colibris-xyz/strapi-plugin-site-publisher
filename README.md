@@ -31,17 +31,19 @@ Generate a config file at `config/plugins.js` or `config/development/plugins.js`
 ```javascript
 module.exports = ({ env }) => ({
   'site-publisher': {
-    owner: 'username', // The Github organisation or user
-    repo: 'reponame', // The name of the repository
-    workflow_id: 'rebuild.yml', // The workflow_id or filename
-    token: env('GITHUB_TOKEN'), // The GitHub personal access token with access to trigger workflows and view build status
-    branch: 'master', // The branch the workflow should be triggered on
-    inputs: {
-      // Optional inputs to pass through to the GitHub workflow
-      some_input: 'Some value',
-      some_other_input: 'Some other value',
-    },
-  },
+    config: {
+      owner: 'username', // The Github organisation or user
+      repo: 'reponame', // The name of the repository
+      workflow_id: 'rebuild.yml', // The workflow_id or filename
+      token: env('GITHUB_TOKEN'), // The GitHub personal access token with access to trigger workflows and view build status
+      branch: 'master', // The branch the workflow should be triggered on
+      inputs: {
+        // Optional inputs to pass through to the GitHub workflow
+        some_input: 'Some value',
+        some_other_input: 'Some other value',
+      }
+    }
+  }
 });
 ```
 
