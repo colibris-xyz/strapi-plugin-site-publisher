@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-site-publisher",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A plugin to easily publish your site from Strapi.",
   "strapi": {
     "displayName": "Publish site",
