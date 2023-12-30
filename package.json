@@ -33,7 +33,7 @@
     "axios": "0.27.2"
   },
   "devDependencies": {
-    "@babel/core": "7.23.6",
+    "@babel/core": "7.23.7",
     "@babel/eslint-parser": "7.23.3",
     "@babel/preset-react": "7.23.3",
     "@release-it/conventional-changelog": "5.1.1",
