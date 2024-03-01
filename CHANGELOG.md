@@ -1,3 +1,12 @@
+
+
+### [0.2.1](https://github.com/colibris-xyz/strapi-plugin-site-publisher/compare/v0.2.0...v0.2.1) (2024-03-01)
+
+
+### Bug Fixes
+
+* Fix plugin crashing with Strapi 4.20.x ([#133](https://github.com/colibris-xyz/strapi-plugin-site-publisher/issues/133)) ([57d16fc](https://github.com/colibris-xyz/strapi-plugin-site-publisher/commit/57d16fcd90feb5a00e0056db6f03bcfa6de62920))
+
 ## [0.2.0](https://github.com/colibris-xyz/strapi-plugin-site-publisher/compare/v0.1.2...v0.2.0) (2024-01-10)
 
 
