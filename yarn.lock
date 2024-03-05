@@ -1712,13 +1712,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/icons@npm:1.13.0":
-  version: 1.13.0
-  resolution: "@strapi/icons@npm:1.13.0"
+"@strapi/icons@npm:1.16.0":
+  version: 1.16.0
+  resolution: "@strapi/icons@npm:1.16.0"
   peerDependencies:
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
-  checksum: 9dd24f70cf40d972733c013f167b5ce30602afa9918c8f9dba5b89844f6137bd9a283c6ff38ce369385afa8cc7a25f33e47aed631769c006076e230e08c8d4ef
+  checksum: 4fed68a6d0c2440fe2b44699bcbc8203e7093261f16a76e33d4111869655e8a574eb0e11d3e441149e4f0c4421dad6bb88be19a1308a39b821ce3c9e4740fdee
   languageName: node
   linkType: hard
 
@@ -7599,7 +7599,7 @@ __metadata:
     "@release-it/conventional-changelog": "npm:5.1.1"
     "@strapi/design-system": "npm:1.13.1"
     "@strapi/helper-plugin": "npm:4.16.2"
-    "@strapi/icons": "npm:1.13.0"
+    "@strapi/icons": "npm:1.16.0"
     axios: "npm:1.6.5"
     eslint: "npm:8.55.0"
     eslint-config-prettier: "npm:8.10.0"
