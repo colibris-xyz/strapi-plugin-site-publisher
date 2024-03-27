@@ -1687,9 +1687,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/helper-plugin@npm:4.16.2":
-  version: 4.16.2
-  resolution: "@strapi/helper-plugin@npm:4.16.2"
+"@strapi/helper-plugin@npm:4.21.1":
+  version: 4.21.1
+  resolution: "@strapi/helper-plugin@npm:4.21.1"
   dependencies:
     axios: "npm:1.6.0"
     date-fns: "npm:2.30.0"
@@ -1702,13 +1702,13 @@ __metadata:
     react-query: "npm:3.39.3"
     react-select: "npm:5.7.0"
   peerDependencies:
-    "@strapi/design-system": 1.13.1
-    "@strapi/icons": 1.13.0
+    "@strapi/design-system": 1.16.0
+    "@strapi/icons": 1.16.0
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
     react-router-dom: ^5.2.0
     styled-components: ^5.2.1
-  checksum: 8cca8e54f0cc23eb98af7c3a64e97cd8dee4d7ad5207be59a9e35cc57d2b716edd313b4ff57884a30bdd01e7496dc5e42044f6ee9d72606ba93b013193397a69
+  checksum: f6c34569ee5be35d239e822ceab67d79bbb709aa9330ff8dfcbf68b76c341c19ef132e78a836b00dbae50ebf8f76a5f9ea0616415e68c6e5aef0f24557c3b770
   languageName: node
   linkType: hard
 
@@ -7598,7 +7598,7 @@ __metadata:
     "@babel/preset-react": "npm:7.23.3"
     "@release-it/conventional-changelog": "npm:5.1.1"
     "@strapi/design-system": "npm:1.13.1"
-    "@strapi/helper-plugin": "npm:4.16.2"
+    "@strapi/helper-plugin": "npm:4.21.1"
     "@strapi/icons": "npm:1.13.0"
     axios: "npm:1.6.5"
     eslint: "npm:8.55.0"
