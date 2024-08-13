@@ -33,7 +33,7 @@
     "@strapi/design-system": "1.13.1",
     "@strapi/helper-plugin": "4.16.2",
     "@strapi/icons": "1.13.0",
-    "axios": "1.6.5",
+    "axios": "1.7.4",
     "prop-types": "15.8.1"
   },
   "devDependencies": {
