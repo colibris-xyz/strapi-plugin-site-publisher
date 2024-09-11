@@ -40,7 +40,7 @@
     "@babel/core": "7.23.7",
     "@babel/eslint-parser": "7.23.3",
     "@babel/preset-react": "7.23.3",
-    "@release-it/conventional-changelog": "5.1.1",
+    "@release-it/conventional-changelog": "8.0.2",
     "eslint": "8.55.0",
     "eslint-config-prettier": "8.10.0",
     "eslint-plugin-import": "2.29.1",
