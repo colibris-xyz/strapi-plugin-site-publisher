@@ -1687,11 +1687,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/helper-plugin@npm:4.16.2":
-  version: 4.16.2
-  resolution: "@strapi/helper-plugin@npm:4.16.2"
+"@strapi/helper-plugin@npm:4.25.23":
+  version: 4.25.23
+  resolution: "@strapi/helper-plugin@npm:4.25.23"
   dependencies:
-    axios: "npm:1.6.0"
+    axios: "npm:1.8.2"
     date-fns: "npm:2.30.0"
     formik: "npm:2.4.0"
     immer: "npm:9.0.19"
@@ -1702,13 +1702,13 @@ __metadata:
     react-query: "npm:3.39.3"
     react-select: "npm:5.7.0"
   peerDependencies:
-    "@strapi/design-system": 1.13.1
-    "@strapi/icons": 1.13.0
+    "@strapi/design-system": 1.19.0
+    "@strapi/icons": 1.19.0
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
     react-router-dom: ^5.2.0
     styled-components: ^5.2.1
-  checksum: 8cca8e54f0cc23eb98af7c3a64e97cd8dee4d7ad5207be59a9e35cc57d2b716edd313b4ff57884a30bdd01e7496dc5e42044f6ee9d72606ba93b013193397a69
+  checksum: f1b0e38fbb4be548fcedd4ed358454f3984ab746c9b45ad8c7b31ec911bb53707ae7b713cac8cefba27c739ded5932b9a665c8ea8facd4dca9302b6f98e491f5
   languageName: node
   linkType: hard
 
@@ -2220,17 +2220,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.6.0":
-  version: 1.6.0
-  resolution: "axios@npm:1.6.0"
-  dependencies:
-    follow-redirects: "npm:^1.15.0"
-    form-data: "npm:^4.0.0"
-    proxy-from-env: "npm:^1.1.0"
-  checksum: 2879e17b96cbca7e2096d231a44e2d0f03e657d79f8928ea38ec5fbaf5a5b7bf952d580cdb58a66ba328c26eb3528b89d5a32da57cc5cf89813786c044f7e9d6
-  languageName: node
-  linkType: hard
-
 "axios@npm:1.6.5":
   version: 1.6.5
   resolution: "axios@npm:1.6.5"
@@ -2239,6 +2228,17 @@ __metadata:
     form-data: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
   checksum: aeb9acf87590d8aa67946072ced38e01ca71f5dfe043782c0ccea667e5dd5c45830c08afac9be3d7c894f09684b8ab2a458f497d197b73621233bcf202d9d468
+  languageName: node
+  linkType: hard
+
+"axios@npm:1.8.2":
+  version: 1.8.2
+  resolution: "axios@npm:1.8.2"
+  dependencies:
+    follow-redirects: "npm:^1.15.6"
+    form-data: "npm:^4.0.0"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: d8c2969e4642dc6d39555ac58effe06c051ba7aac2bd40cad7a9011c019fb2f16ee011c5a6906cb25b8a4f87258c359314eb981f852e60ad445ecaeb793c7aa2
   languageName: node
   linkType: hard
 
@@ -4074,13 +4074,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.0, follow-redirects@npm:^1.15.4":
+"follow-redirects@npm:^1.15.4":
   version: 1.15.4
   resolution: "follow-redirects@npm:1.15.4"
   peerDependenciesMeta:
     debug:
       optional: true
   checksum: 5f37ed9170c9eb19448c5418fdb0f2b73f644b5364834e70791a76ecc7db215246f9773bbef4852cfae4067764ffc852e047f744b661b0211532155b73556a6a
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.11
+  resolution: "follow-redirects@npm:1.15.11"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: d301f430542520a54058d4aeeb453233c564aaccac835d29d15e050beb33f339ad67d9bddbce01739c5dc46a6716dbe3d9d0d5134b1ca203effa11a7ef092343
   languageName: node
   linkType: hard
 
@@ -7598,7 +7608,7 @@ __metadata:
     "@babel/preset-react": "npm:7.23.3"
     "@release-it/conventional-changelog": "npm:5.1.1"
     "@strapi/design-system": "npm:1.13.1"
-    "@strapi/helper-plugin": "npm:4.16.2"
+    "@strapi/helper-plugin": "npm:4.25.23"
     "@strapi/icons": "npm:1.13.0"
     axios: "npm:1.6.5"
     eslint: "npm:8.55.0"
